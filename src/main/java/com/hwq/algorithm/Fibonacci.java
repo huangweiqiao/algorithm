@@ -1,4 +1,4 @@
-package com.hwq.algorithm.datastructure;
+package com.hwq.algorithm;
 
 /**
  * 斐波拉数
