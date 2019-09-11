@@ -19,7 +19,7 @@ package com.hwq.algorithm;
 public class ShellSort {
 
     public static void main(String[] args) {
-        long [] arr = {90,30,20,40,10,80,-5,60};
+        long [] arr = {90,30,20,40,10,80,-5,60,-10,-100,100,99,200};
         sort(arr);
         System.out.print("[");
         for (int i=0;i<arr.length;i++){
@@ -32,7 +32,7 @@ public class ShellSort {
         //初始化一个间隔
         int h = 1;
         //计算最大间隔
-        while(h < arr.length /3){
+        while(h < arr.length ){
             h = 3*h+1;
         }
         while(h >0 ){
