@@ -19,7 +19,7 @@ package com.hwq.algorithm;
 public class ShellSort {
 
     public static void main(String[] args) {
-        long [] arr = {90,30,20,40,10,80,-5,60,-10,-100,100,99,200};
+        long [] arr = {10,9,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5,-6,-7,-8};
         sort(arr);
         System.out.print("[");
         for (int i=0;i<arr.length;i++){
@@ -29,6 +29,7 @@ public class ShellSort {
     }
 
     public static void sort(long [] arr){
+        int count = 0;
         //初始化一个间隔
         int h = 1;
         //计算最大间隔
@@ -38,18 +39,21 @@ public class ShellSort {
         while(h >0 ){
             //进行插入排序
             long insertValue; //要插入的值
-            //一开始就是将i=1,就是要和前面的数据进行比较，如果i=0了，前面都没数据没办法比较
+            //一开始就是将i=h,就是要和前面h的数据进行比较
             for (int i=h;i<arr.length;i++){
                 insertValue = arr[i];
                 int j=i;
                 while(j>h-1 && arr[j-h]>=insertValue){
                     arr[j] = arr[j-h];
                     j-=h;
+                    count++;
                 }
                 arr[j] = insertValue;
+                count++;
             }
             //减小间隔
             h = (h -1)/3;
         }
+        System.out.println("移动了"+count+"次");
     }
 }
