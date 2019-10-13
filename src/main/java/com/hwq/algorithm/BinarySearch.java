@@ -13,11 +13,11 @@ public class BinarySearch {
         MyOrderArray ma = new MyOrderArray();
         ma.insert(2);
         ma.insert(3);
-        ma.insert(9);
-        ma.insert(6);
         ma.insert(8);
+        ma.insert(6);
+        ma.insert(9);
         ma.display();
-        System.out.println(binarySearch(ma,6));
+        System.out.println(binarySearch(ma,10));
     }
 
     /**
@@ -40,7 +40,7 @@ public class BinarySearch {
                 if(ma.arr[middle] > value){
                     pow = middle -1;
                 }else{
-                    low = low + 1;
+                    low = middle + 1;
                 }
             }
         }
