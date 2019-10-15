@@ -1,4 +1,6 @@
-package com.hwq.algorithm.datastructure;
+package com.hwq.algorithm.datastructure.test;
+
+import com.hwq.algorithm.datastructure.FirstLastLinkList;
 
 /**
  * Created by hwq on 2019/9/9.

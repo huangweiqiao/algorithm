@@ -1,4 +1,7 @@
-package com.hwq.algorithm.datastructure;
+package com.hwq.algorithm.datastructure.test;
+
+import com.hwq.algorithm.datastructure.LinkList;
+import com.hwq.algorithm.datastructure.Node;
 
 /**
  * Created by hwq on 2019/9/2.

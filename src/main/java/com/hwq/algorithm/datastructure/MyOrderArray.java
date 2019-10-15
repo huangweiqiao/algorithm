@@ -79,7 +79,7 @@ public class MyOrderArray {
                 if(arr[middle] > value){
                     pow = middle -1;
                 }else{
-                    low = low + 1;
+                    low = middle + 1;
                 }
             }
         }
