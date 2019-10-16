@@ -14,13 +14,33 @@ public class TestTree {
         tree.insert(20,"Yao");
         tree.insert(15,"Kobi");
         tree.insert(3,"Mac");
+        tree.insert(4,"Zhangsan");
+        tree.insert(90,"Lisi");
 
-        System.out.println(tree.root.data);
+       /* System.out.println(tree.root.data);
         System.out.println(tree.root.leftChild.data);
         System.out.println(tree.root.rightChild.data);
         System.out.println(tree.root.rightChild.leftChild.data);
         System.out.println("===================");
         TreeNode node = tree.find(20);
-        System.out.println(node.data+","+node.sData);
+        System.out.println(node.data+","+node.sData);*/
+
+/*        System.out.println("=========前序遍历==========");
+        tree.frontOrder(tree.root);
+
+        System.out.println("=========中序遍历==========");
+        tree.inOrder(tree.root);
+
+        System.out.println("=========后序遍历==========");
+        tree.afterOrder(tree.root);
+
+        System.out.println("=========删除叶子节点==========");
+        tree.delete(4);*/
+
+        System.out.println("=========删除有一个子节点的节点==========");
+        tree.delete(3);
+
+        System.out.println("=========中序遍历==========");
+        tree.inOrder(tree.root);
     }
 }
