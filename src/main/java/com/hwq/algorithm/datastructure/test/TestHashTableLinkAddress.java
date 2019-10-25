@@ -21,5 +21,9 @@ public class TestHashTableLinkAddress {
         System.out.println(ht.find("a").getName());
         System.out.println(ht.find("ct").getName());
 
+        System.out.println(ht.delete("a").getName());
+        //这里会抛异常，因为前面已经删掉了
+        System.out.println(ht.find("a").getName());
+
     }
 }

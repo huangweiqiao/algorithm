@@ -4,6 +4,9 @@ import java.math.BigInteger;
 
 /**
  * Created by hwq on 2019/10/19.
+ * 在哈希表每个单元中设置链表，某个数据项的关键字还是像通常一样映射到哈希表的单元中，
+ * 而数据项本身插入到单元的链表中
+
  */
 public class HashTableLinkAddress {
     private HashTableLink [] arr;
